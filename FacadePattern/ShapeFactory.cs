@@ -5,27 +5,17 @@ namespace FacadePattern;
 
 public class ShapeFactory
 {
-    private Circle circle;
-    private Square square;
-    private Rectangle rectangle;
+    
+    public void Draw()
+    {
+        var Circle = new Circle();
+        var square = new Square();
+        var rectangle = new Rectangle();
 
-    public ShapeFactory()
-    {
-        circle = new Circle();
-        square = new Square();
-        rectangle = new Rectangle();
-    }
 
-    public Circle GetCircle()
-    {
-        return circle;
+        Circle.Draw();
+        square.Draw();
+        rectangle.Draw();
     }
-    public Square GetSquare()
-    {
-        return square;
-    }
-    public Rectangle GetRectangle()
-    {
-        return rectangle;
-    }
+   
 }
